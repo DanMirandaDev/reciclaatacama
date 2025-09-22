@@ -11821,11 +11821,7 @@ textarea.form-control {
   top: 7px;
 }
 
-#videoagencia video{
-  width: 900px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  
-}
+
 
 /*-- -------------------------- -->
 <---           Hero             -->
@@ -12014,10 +12010,12 @@ textarea.form-control {
 }
                             
 
-#videoagencia video {
+#videoagencia{
   max-width: 100%;   /* se adapta al ancho del contenedor */
-  height: auto;      /* mantiene proporción */
-  border-radius: 8px;
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  
 }
 
 /* Ajustes para tablets */
