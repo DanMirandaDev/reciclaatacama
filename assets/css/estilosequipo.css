@@ -1,0 +1,238 @@
+/*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0rem) {
+    #meet-team-977 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+    }
+    #meet-team-977 .cs-container {
+        width: 100%;
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #meet-team-977 .cs-content {
+        text-align: center;
+        width: 100%;
+        max-width: 40.625rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #meet-team-977 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #meet-team-977 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #meet-team-977 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #meet-team-977 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #meet-team-977 .cs-item {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    #meet-team-977 .cs-item:hover {
+        cursor: pointer;
+    }
+    #meet-team-977 .cs-item:hover .cs-picture:before,
+    #meet-team-977 .cs-item:hover .cs-picture:after {
+        opacity: 1;
+    }
+    #meet-team-977 .cs-item:hover .cs-picture img {
+        transform: scale(1.1);
+    }
+    #meet-team-977 .cs-picture {
+        width: 100%;
+        height: 25rem;
+        aspect-ratio: 0.82;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    #meet-team-977 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: transform 0.7s;
+    }
+    #meet-team-977 .cs-info {
+        width: 90%;
+        max-width: 15rem;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+    #meet-team-977 .cs-info:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        opacity: 0.8;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition:
+            background-color 0.3s,
+            opacity 0.3s;
+    }
+    #meet-team-977 .cs-name {
+        /* 20px - 25px */
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 0.5rem 0;
+        color: #fff;
+        display: block;
+    }
+    #meet-team-977 .cs-job {
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin: 0;
+        color: #fff;
+        display: block;
+    }
+    #meet-team-977 .cs-social-group {
+        margin: 0.5rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    #meet-team-977 .cs-link {
+        width: 2rem;
+        height: 2rem;
+        background-color: #e8e8e8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #meet-team-977 .cs-link:hover .cs-icon {
+        filter: grayscale(0);
+        transform: translateY(-0.25rem);
+    }
+    #meet-team-977 .cs-icon {
+        width: 0.75rem;
+        height: auto;
+        filter: grayscale(1);
+        transition:
+            filter 0.3s,
+            transform 0.3s;
+        z-index: 10;
+    }
+}
+/* Tablet - 550px */
+@media only screen and (min-width: 34.375rem) {
+    #meet-team-977 .cs-card-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    #meet-team-977 .cs-item {
+        width: 50%;
+    }
+    #meet-team-977 .cs-picture {
+        /* remove the aspect ratio so the height can be squished */
+        aspect-ratio: initial;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #meet-team-977 .cs-container {
+        max-width: 80rem;
+    }
+    #meet-team-977 .cs-item {
+        width: 25%;
+    }
+    #meet-team-977 .cs-item:hover .cs-info:before {
+        background-color: var(--primary);
+        opacity: 1;
+    }
+    #meet-team-977 .cs-item:hover .cs-social-group {
+        height: 2rem;
+        margin-top: 0.5rem;
+    }
+    #meet-team-977 .cs-item:hover .cs-link {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    #meet-team-977 .cs-social-group {
+        height: 0;
+        margin-top: 0;
+        transition:
+            height 0.3s,
+            marign-top 0.3s;
+    }
+    #meet-team-977 .cs-link {
+        opacity: 0;
+        transform: translateX(-0.5rem);
+        transition:
+            opacity 0.6s,
+            transform 0.4s;
+    }
+    #meet-team-977 .cs-link:nth-of-type(2) {
+        transition-delay: 0.1s;
+    }
+    #meet-team-977 .cs-link:nth-of-type(3) {
+        transition-delay: 0.2s;
+    }
+    #meet-team-977 .cs-link:nth-of-type(4) { 
+        transition-delay: 0.3s;
+    }
+}
+
+                                
