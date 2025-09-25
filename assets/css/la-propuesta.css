@@ -1,0 +1,204 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbs-459,
+    #RTsbsr-459,
+    #RTsbst-459 {
+        padding: var(--sectionPadding);
+    }
+    #RTsbs-459 .cs-container,
+    #RTsbsr-459 .cs-container,
+    #RTsbst-459 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+    #RTsbs-459 .cs-content,
+    #RTsbsr-459 .cs-content,
+    #RTsbst-459 .cs-content {
+        text-align: left;
+        width: auto;
+        max-width: 40.625rem;
+        /* 40px - 60px top and bottom */
+        /* 20px - 60px left and right */
+        padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.25rem, 5.5vw, 3.75rem);
+        background-color: #fafbfc;
+        /* prevents padding from affecting width and height */
+        box-sizing: border-box;
+        border-radius: 0.75rem;
+        /* clips the pseudo element */
+        overflow: hidden;
+        box-shadow: 0px 24px 54px rgba(87, 107, 147, 0.12);
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+        position: relative;
+        z-index: 10;
+    }
+    #RTsbs-459 .cs-content:before,
+    #RTsbsr-459 .cs-content:before,
+    #RTsbst-459 .cs-content:before {
+        /* green border top */
+        content: "";
+        width: 100%;
+        height: 0.5rem;
+        background: var(--primary);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+
+    #RTsbs-459 .cs-text,
+    #RTsbsr-459 .cs-text,
+    #RTsbst-459 .cs-text {
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+    #RTsbs-459 .cs-text:last-of-type,
+    #RTsbsr-459 .cs-text:last-of-type,
+    #RTsbst-459 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #RTsbs-459 .cs-button-solid,
+    #RTsbsr-459 .cs-button-solid,
+    #RTsbst-459 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        align-items: center;
+        font-weight: 700;
+        text-align: center;
+        margin-left: 80px;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 5rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #RTsbs-459 .cs-button-solid:before,
+    #RTsbsr-459 .cs-button-solid:before,
+    #RTsbst-459 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5rem;
+        transition: width 0.3s;
+    }
+    #RTsbs-459 .cs-button-solid:hover:before,
+    #RTsbsr-459 .cs-button-solid:hover:before,
+    #RTsbst-459 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #RTsbs-459 .cs-picture,
+    #RTsbsr-459 .cs-picture,
+    #RTsbst-459 .cs-picture {
+        width: 100%;
+        height: auto;
+        height: 27.6875rem;
+        /* clips the img corners */
+        overflow: hidden;
+        border-radius: 1.5rem;
+        display: block;
+        /* sends it to the top */
+        order: -1;
+        position: relative;
+    }
+    #RTsbs-459 .cs-picture img,
+    #RTsbsr-459 .cs-picture img,
+    #RTsbst-459 .cs-picture img {
+        position: absolute;
+        left: 0px;
+        height: auto;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbs-459 .cs-container,
+    #RTsbsr-459 .cs-container,
+    #RTsbst-459 .cs-container {
+        padding: 3.75rem 0;
+        position: relative;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    #RTsbs-459 .cs-content,
+    #RTsbsr-459 .cs-content,
+    #RTsbst-459 .cs-content {
+        width: 65%;
+        margin: 0;
+    }
+    #RTsbs-459 .cs-picture,
+    #RTsbsr-459 .cs-picture,
+    #RTsbst-459 .cs-picture {
+        /* 465px - 617px */
+        width: clamp(29.0625rem, 53vw, 38.5625rem);
+        position: absolute;
+        left: 0;
+        height: 100%;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #RTsbs-459 .cs-content,
+    #RTsbsr-459 .cs-content,
+    #RTsbst-459 .cs-content {
+        /* 90px - 108px */
+        margin-right: clamp(rem, 8.5vw, 6.75rem);
+    }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbsr-459 {
+        background-color: #f7f7f7;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbsr-459 .cs-container {
+        align-items: flex-start;
+    }
+    #RTsbsr-459 .cs-picture {
+        left: auto;
+        right: 0;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #RTsbsr-459 .cs-content {
+        margin-right: 200px;
+        /* 90px - 108px */
+        margin-left: clamp(8.5vw, 6.75rem);
+    }
+}
+
+                                

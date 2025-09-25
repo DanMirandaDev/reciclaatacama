@@ -1,0 +1,346 @@
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #propuesta {
+    padding: var(--sectionPadding);
+    position: relative;
+    overflow: hidden;
+    background-color: #F2FAF8;
+    z-index: 1;
+  }
+  #propuesta .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 32px - 48px */
+    gap: clamp(2rem, 6vw, 3rem);
+  }
+  #propuesta .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #propuesta .cs-title {
+    /* 32px - 48px */
+    margin: 0 0 clamp(2rem, 5vw, 3rem);
+    text-decoration: underline;
+  }
+  #propuesta .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    /* changed at desktop */
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.7vw, 1.25rem);
+  }
+  #propuesta .cs-item {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 2rem;
+  }
+  #propuesta .cs-number {
+    font-size: 3.0625rem;
+    line-height: 1.2em;
+    font-weight: 900;
+    color: var(--primary);
+    /* 8px - 72px */
+    margin: 0 0 clamp(0.5rem, 6vw, 4.5rem);
+    display: block;
+  }
+  #propuesta .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
+  }
+  #propuesta .cs-image-group {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 5.375rem 5.375rem;
+    z-index: 1;
+  }
+  #propuesta .cs-picture {
+    width: 100%;
+    /* 240px - 376px */
+    height: clamp(15rem, 46vw, 23.5rem);
+
+    position: relative;
+  }
+  #propuesta .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  #propuesta .cs-mask {
+    --maskColor: #F2FAF8;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: -1px;
+  }
+  #propuesta .cs-faq-group {
+    width: 100%;
+    max-width: 40.625rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #propuesta .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    background-color: #00000015;
+    border: 1px solid #E8E8E8;
+    /* 24px - 32px */
+    border-radius: clamp(1rem, 2.4vw, 2rem);
+    /* clips all corners of the button that overlap the rounded border */
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+  #propuesta .cs-faq-item.active {
+    border-color: var(--secondary);
+  }
+  #propuesta .cs-faq-item.active .cs-button {
+    color: var(--secondary);
+  }
+  #propuesta .cs-faq-item.active .cs-button .cs-indicator:before {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  #propuesta .cs-faq-item.active .cs-button .cs-indicator:after {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  #propuesta .cs-faq-item.active .cs-item-p {
+    height: auto;
+    /* 20px - 24px bottom */
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+    opacity: 1;
+  }
+  #propuesta .cs-button {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    /* 16px - 24px */
+    padding: clamp(1rem, 2vw, 1.5rem);
+    background-color: #fff;
+    border: none;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 700px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #propuesta .cs-button:hover {
+    cursor: pointer;
+  }
+  #propuesta .cs-button .cs-indicator {
+    /* 40px - 48px */
+    width: clamp(2.5rem, 4vw, 3rem);
+    height: clamp(2.5rem, 4vw, 3rem);
+    background-color: #fff;
+    border: 1px solid #BABABA;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  #propuesta .cs-button .cs-indicator:before {
+    /* left line */
+    content: '';
+    width: 1rem;
+    height: 0.125rem;
+    background-color: #767676;
+    opacity: 1;
+    border-radius: 2px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .5s;
+  }
+  #propuesta .cs-button .cs-indicator:after {
+    /* right line */
+    content: '';
+    width: 1rem;
+    height: 0.125rem;
+    background-color: #767676;
+    opacity: 1;
+    border-radius: 2px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: transform .5s;
+  }
+  #propuesta .cs-button-text {
+    width: 90%;
+    display: block;
+  }
+  #propuesta .cs-item-p {
+    /* 14px - 16px */
+    font-size: 15px;
+    line-height: 1.5em;
+    width: 90%;
+    height: 0;
+    margin: 0;
+    /* 16px - 24px */
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    opacity: 0;
+    color: var(--bodyTextColor);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+  #propuesta .cs-floater {
+    display: none;
+    position: absolute;
+  }
+  #propuesta .cs-floater1 {
+    width: 19.5rem;
+    height: auto;
+    margin-right: 43.75rem;
+    top: 9rem;
+    right: 50%;
+    transform: rotate(8deg);
+  }
+  #propuesta .cs-floater2 {
+    width: 12.9375rem;
+    height: auto;
+    margin-left: 52.5rem;
+    top: 20.625rem;
+    left: 50%;
+    transform: rotate(8deg);
+  }
+  #propuesta .cs-top {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #propuesta .cs-bottom {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #propuesta .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #propuesta .cs-content {
+    max-height: 38.5rem;
+    width: 40%;
+    text-align: left;
+    align-items: flex-start;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #propuesta .cs-card-group {
+    /* pushes up against the other flex items so it pushes to the bottom of the flexbox */
+    margin-top: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  #propuesta .cs-item {
+    grid-column: span 1;
+  }
+}
+/* Larger Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+  #propuesta .cs-floater {
+    display: block;
+  }
+}
+                                
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #e4582e;
+    --primaryLight: #ffba43;
+    --secondary: #db8f01d8;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                            
+
+
