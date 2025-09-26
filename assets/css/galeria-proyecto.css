@@ -1,0 +1,54 @@
+.gallery-container {
+    display: flex;
+    justify-content: center;   /* Centra el contenido en horizontal */
+    align-items: flex-start;   /* Para que no quede tan abajo */
+    min-height: 100vh;         
+    padding: 40px 20px;        /* Mejor padding adaptable que un fijo de 500px */
+    box-sizing: border-box;
+}
+
+.galer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Se adapta sola */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;               /* Aprovecha todo el ancho disponible */
+    max-width: 900px;         /* No se pasa de este ancho */
+    margin: auto;
+    margin-bottom: 25px;
+
+    justify-items: center;     /* Centra los items en la grilla */
+    align-items: center;       /* Centra verticalmente */
+}
+
+.galeria-item {
+    width: 100%;
+    max-width: 350px;          /* Opcional: controlas el tamaño máximo de cada imagen */
+}
+
+.galeria-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;         /* Mantiene la proporción de la imagen */
+}
+
+.galeria-item img:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Responsive extra */
+@media (max-width: 768px) {
+    .galer {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .galer {
+        grid-template-columns: 1fr;  /* En móviles, una sola columna */
+    }
+}
