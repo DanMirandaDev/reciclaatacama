@@ -1,0 +1,357 @@
+#propuesta{
+    margin-top: 25px;
+}
+
+#propuesta {
+  padding-top: 80px;  /* altura del navbar */
+  margin-top: -80px;
+}
+
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbs-459,
+    #RTsbsr-459,
+    #RTsbst-459 {
+        padding: var(--sectionPadding);
+    }
+    #RTsbs-459 .cs-container,
+    #RTsbsr-459 .cs-container,
+    #RTsbst-459 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+    #RTsbs-459 .cs-content,
+    #RTsbsr-459 .cs-content,
+    #RTsbst-459 .cs-content {
+        text-align: left;
+        width: auto;
+        max-width: 40.625rem;
+        /* 40px - 60px top and bottom */
+        /* 20px - 60px left and right */
+        padding: clamp(2.5rem, 7vw, 3.75rem) clamp(1.25rem, 5.5vw, 3.75rem);
+        background-color: #ebdbcb;
+        box-sizing: border-box;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        box-shadow: 0px 24px 54px rgba(87, 107, 147, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        z-index: 10;
+    }
+    #RTsbs-459 .cs-content:before,
+    #RTsbsr-459 .cs-content:before,
+    #RTsbst-459 .cs-content:before {
+        /* green border top */
+        content: "";
+        width: 100%;
+        height: 0.5rem;
+        background: var(--primary);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+
+    #RTsbs-459 .cs-text,
+    #RTsbsr-459 .cs-text,
+    #RTsbst-459 .cs-text {
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+    #RTsbs-459 .cs-text:last-of-type,
+    #RTsbsr-459 .cs-text:last-of-type,
+    #RTsbst-459 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #RTsbs-459 .cs-button-solid,
+    #RTsbsr-459 .cs-button-solid,
+    #RTsbst-459 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        align-items: center;
+        font-weight: 700;
+        text-align: center;
+        margin-left: 80px;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 2rem;
+        background-color: #ebdbcb;
+        border-radius: 5rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    #RTsbs-459 .cs-button-solid:before,
+    #RTsbsr-459 .cs-button-solid:before,
+    #RTsbst-459 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 5rem;
+        transition: width 0.3s;
+    }
+    #RTsbs-459 .cs-button-solid:hover:before,
+    #RTsbsr-459 .cs-button-solid:hover:before,
+    #RTsbst-459 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #RTsbs-459 .cs-picture,
+    #RTsbsr-459 .cs-picture,
+    #RTsbst-459 .cs-picture {
+        width: 100%;
+        height: auto;
+        height: 27.6875rem;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        display: block;
+        order: -1;
+        position: relative;
+    }
+    #RTsbs-459 .cs-picture img,
+    #RTsbsr-459 .cs-picture img,
+    #RTsbst-459 .cs-picture img {
+        position: absolute;
+        left: 0px;
+        height: auto;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbs-459 .cs-container,
+    #RTsbsr-459 .cs-container,
+    #RTsbst-459 .cs-container {
+        padding: 3.75rem 0;
+        position: relative;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    #RTsbs-459 .cs-content,
+    #RTsbsr-459 .cs-content,
+    #RTsbst-459 .cs-content {
+        width: 65%;
+        margin: 0;
+    }
+    #RTsbs-459 .cs-picture,
+    #RTsbsr-459 .cs-picture,
+    #RTsbst-459 .cs-picture {
+        /* 465px - 617px */
+        width: clamp(29.0625rem, 53vw, 38.5625rem);
+        position: absolute;
+        left: 0;
+        height: 100%;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #RTsbs-459 .cs-content,
+    #RTsbsr-459 .cs-content,
+    #RTsbst-459 .cs-content {
+        /* 90px - 108px */
+        margin-right: clamp(rem, 8.5vw, 6.75rem);
+    }
+}
+
+
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbsr-459 {
+        background-color: #ebdbcb;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbsr-459 .cs-container {
+        align-items: flex-start;
+    }
+    #RTsbsr-459 .cs-picture {
+        left: auto;
+        right: 0;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #RTsbsr-459 .cs-content {
+        margin-right: 200px;
+        /* 90px - 108px */
+        margin-left: clamp(8.5vw, 6.75rem);
+    }
+}
+
+                                
+/* Estilos del Contenedor Principal */
+.info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ebdbcb;
+    /* EFECTO 1: Sombra */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease-in-out; /* Transición para la sombra */
+}
+
+.info-container:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra ligeramente más intensa al pasar el ratón */
+}
+
+/* Estilos del Checkbox (Oculto) */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Estilos del Botón/Etiqueta */
+.toggle-button {
+    display: flex; /* Usamos flexbox para alinear texto e icono */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente el texto e icono */
+    gap: 8px; /* Espacio entre el texto y el icono */
+    padding: 10px 20px;
+    background-color: #4caf50; /* Un azul más vibrante */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Más transiciones */
+    margin-bottom: 15px;
+    /* EFECTO 1: Sombra en el botón */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button:hover {
+    background-color: #4caf50;
+    transform: translateY(-2px); /* Ligerísimo levantamiento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* EFECTO 2: Icono de flecha con rotación */
+.toggle-button::after {
+    content: '▼'; /* Flecha hacia abajo */
+    font-size: 0.8em;
+    margin-left: 8px;
+    transition: transform 0.3s ease; /* Transición para la rotación */
+}
+
+/* Estado Expandido: Cuando el checkbox está marcado */
+.toggle-checkbox:checked ~ .expanded-content {
+    max-height: 5000px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* EFECTO: Un ligero escalado al aparecer, si fuera un elemento diferente */
+    /* transform: scaleY(1); */
+    /* opacity: 1; */
+}
+
+/* Estado del Botón en "Contraer" */
+.toggle-checkbox:checked ~ .toggle-button {
+    background-color: #007204; /* Rojo para "Cerrar" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* EFECTO 2: Flecha rotada cuando está expandido */
+.toggle-checkbox:checked ~ .toggle-button::after {
+    content: '▲'; /* Flecha hacia arriba */
+    transform: rotate(180deg); /* Rotación visual */
+}
+
+/* ------------------------------------------------------------------- */
+/* ESTILOS DE LA SECCIÓN EXPANDIBLE (CLAVE DEL EFECTO) */
+/* ------------------------------------------------------------------- */
+
+.expanded-content {
+    max-height: 0;
+    overflow: hidden;
+    /* EFECTO 3: Transición más suave para la expansión/contracción */
+    transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out;
+    padding: 0 10px;
+    /* Considera añadir: */
+    /* opacity: 0; */
+    /* transform: scaleY(0); */
+    /* transform-origin: top; */
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ESTILOS DEL TEXTO INTERNO */
+/* ------------------------------------------------------------------- */
+
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.action-pillars, .expected-results {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.action-pillars li, .expected-results li {
+    background-color: #ebdbcb; /* Blanco para que se note la sombra */
+    border-left: 4px solid #007bff; /* Color primario */
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    /* EFECTO 1: Sombra y Transición para las listas */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease-in-out;
+}
+
+/* EFECTO 4: Resaltado al pasar el ratón en los elementos de lista */
+.action-pillars li:hover, .expected-results li:hover {
+    transform: translateX(5px); /* Deslizamiento ligero a la derecha */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    border-left-color: #0056b3; /* Color de borde más oscuro al hacer hover */
+}
+
+.expected-results li {
+    border-left-color: #28a745; /* Verde para resultados */
+}
+.expected-results li:hover {
+    border-left-color: #218838; /* Verde más oscuro al hover */
+}
+
+/* Línea divisoria */
+
+
+/* Medios para Responsividad (ejemplo básico) */
+@media (max-width: 600px) {
+    .info-container {
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil en móviles */
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    .toggle-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+

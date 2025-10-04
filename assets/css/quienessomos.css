@@ -1,0 +1,144 @@
+/* Estilos Generales de la Sección */
+
+
+
+
+.quienes-somos-section {
+    text-align: center;
+    background-color: #ebdbcb; /* Color de fondo suave */
+    font-family: Arial, sans-serif;
+}
+
+.section-description {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* Diseño de la Cuadrícula del Equipo */
+.team-grid {
+    display: grid;
+    /* Ajusta las columnas según la cantidad de miembros y el tamaño de pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos de las Tarjetas Individuales */
+.team-member-card {
+    background-color: #ebdbcb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Indica que es clickeable */
+    text-align: center;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member-photo {
+    width: 150px; /* Tamaño ideal para la foto de perfil */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Foto circular */
+    margin-bottom: 15px;
+}
+
+.member-name {
+    font-size: 1.4em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.member-title {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.view-cv-btn {
+    display: inline-block;
+    color: #777;
+    font-size: 0.9em;
+    border-bottom: 1px dashed #777;
+    padding-bottom: 2px;
+}
+
+/* ----------------------- ESTILOS DEL MODAL (POP-UP CV) ----------------------- */
+
+/* Contenedor del Modal (Oculto por defecto) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; /* Asegura que esté sobre todo */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); /* Fondo semi-transparente oscuro */
+    padding-top: 60px;
+}
+
+/* Contenido del Modal */
+.modal-content {
+    background-color: #ebdbcb;
+    margin: 5% auto; /* Centrado vertical y horizontal */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; 
+    max-width: 800px; /* Ancho máximo para el CV */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: left;
+    position: relative;
+}
+
+
+.modal-subtitle {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-style: italic;
+    color: #666;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.modal-content ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center; /* centra nombre e ícono */
+    gap: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.linkedin-link i {
+    font-size: 24px;
+    color: #0077B5;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.linkedin-link i:hover {
+    transform: scale(1.1);
+}
