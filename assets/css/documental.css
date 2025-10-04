@@ -1,0 +1,8 @@
+.section-title {
+  padding-top: 70px;  /* espacio para que no lo tape */
+  margin-top: -45px;  /* compensación para que no se vea desplazado */
+}
+
+.cs-content{
+    justify-self: center;
+}
