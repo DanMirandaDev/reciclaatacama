@@ -1,0 +1,76 @@
+/*Responsive general */
+
+@media (min-width: 430px)and (max-width:1040px){
+  #hero-1785 .cs-title,
+  #hero-1785 .cs-text{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 360px){
+  #hero-1785 .cs-title,
+  #hero-1785 .cs-text{
+    font-size: 40px;
+    width: max-content;
+  }
+}
+
+@media (min-width:360px) and (max-width:600px) {
+  .cs-top{
+    width: max-content;
+  }
+}
+
+@media (max-width: 576px) {
+  #elbasural {
+    display: flex;
+    width: 100%;
+    
+  }
+}
+
+
+@media (max-width: 576px) {
+  #elproyecto {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  #propuesta {
+    width: 100%;
+    margin: auto;
+    
+
+  }
+}
+
+
+@media (min-width: 360px) and (max-width:852px) {
+  .logo {
+.logo-img {
+    height: 90px;   /* Ajusta según la altura de tu navbar */
+    width: auto;    /* Mantiene la proporción */
+    display: block;
+    z-index: 2;
+    margin-right: 58vw;
+}
+  }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+  .logo {
+.logo-img {
+    height: 100px;   /* Ajusta según la altura de tu navbar */
+    width: auto;    /* Mantiene la proporción */
+    display: block;
+    z-index: 2;
+    margin-right: 45rem;
+}
+  }
+}
+
+
