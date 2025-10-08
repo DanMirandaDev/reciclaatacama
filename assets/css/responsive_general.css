@@ -24,7 +24,7 @@
 @media (max-width: 576px) {
   #elbasural {
     display: flex;
-    width: 100%;
+    width: 90%;
     
   }
 }
@@ -32,7 +32,7 @@
 
 @media (max-width: 576px) {
   #elproyecto {
-    width: 100%;
+    width: 90%;
     object-fit: cover;
   }
 }
@@ -41,7 +41,7 @@
 
 @media (max-width: 576px) {
   #propuesta {
-    width: 100%;
+    width: 90%;
     margin: auto;
     
 
@@ -72,5 +72,6 @@
 }
   }
 }
+
 
 
