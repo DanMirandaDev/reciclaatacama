@@ -56,22 +56,21 @@
     width: auto;    /* Mantiene la proporción */
     display: block;
     z-index: 2;
-    margin-right: 58vw;
+    margin-right: 55vw;
 }
   }
 }
 
-@media (min-width: 768px) and (max-width:1024px) {
+@media (min-width: 375px) and (max-width:400px) {
   .logo {
 .logo-img {
-    height: 100px;   /* Ajusta según la altura de tu navbar */
+    height: 90px;   /* Ajusta según la altura de tu navbar */
     width: auto;    /* Mantiene la proporción */
     display: block;
     z-index: 2;
-    margin-right: 45rem;
+    margin-right: 12rem;
 }
   }
 }
-
 
 
