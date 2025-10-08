@@ -1,0 +1,217 @@
+/* ============================
+   NAVBAR RESPONSIVO TOTAL
+============================ */
+
+/* NAVBAR BASE */
+#cs-navigation {
+  width: 100%;
+  max-width: 90rem;
+  height: 7rem;
+  background-color: #ebdbcb;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: clamp(0.75rem, 2vw, 1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  padding: clamp(0.75rem, 2vw, 1.5rem) 1.5rem;
+  box-sizing: border-box;
+  transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+}
+
+/* CONTENEDOR INTERNO */
+#cs-navigation .cs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* LOGO */
+#cs-navigation .logo img {
+  height: 90px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) { #cs-navigation .logo img { height: 90px; } }
+@media (max-width: 600px) { #cs-navigation .logo img { height: 60px; } }
+
+/* MENÚ LINKS */
+#cs-navigation .cs-ul-wrapper { display: flex; align-items: center; }
+#cs-navigation .cs-ul {
+  display: flex;
+  gap: clamp(1.25rem, 2.6vw, 2.25rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+#cs-navigation .cs-li { list-style: none; text-transform: uppercase; position: relative; }
+#cs-navigation .cs-li-link {
+  text-decoration: none;
+  color: #8f3b0d;
+  display: block;
+  font-family: "Prosto One", sans-serif;
+  transition: color 0.3s;
+}
+#cs-navigation .cs-li-link:hover,
+#cs-navigation .cs-li-link.cs-active { color: #34170D; }
+
+/* BOTÓN HAMBURGUESA BASE */
+#cs-navigation .cs-toggle {
+  display: none; /* desktop lo oculta */
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #2f1f17;
+  border: none;
+  border-radius: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10001;
+  position: relative;
+  transition: transform 0.6s;
+}
+#cs-navigation .cs-box { width: clamp(1.5rem, 2vw, 1.75rem); height: 1rem; position: relative; display: flex; justify-content: center; align-items: center; }
+#cs-navigation .cs-line { width: 100%; height: 2px; background-color: #ebdbcb; border-radius: 2px; position: absolute; left: 50%; transform: translateX(-50%); transition: 0.3s; }
+#cs-navigation .cs-line1 { top: 0; }
+#cs-navigation .cs-line2 { top: 50%; transform: translateX(-50%) translateY(-50%); }
+#cs-navigation .cs-line3 { bottom: 0; }
+
+/* ANIMACIÓN HAMBURGUESA */
+#cs-navigation.cs-active .cs-line1 { transform: rotate(45deg) translate(5px, 5px); }
+#cs-navigation.cs-active .cs-line2 { opacity: 0; }
+#cs-navigation.cs-active .cs-line3 { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ===========================
+   MEDIA QUERY MÓVIL VERTICAL Y HORIZONTAL
+=========================== */
+@media only screen and (max-width: 768px),
+       only screen and (orientation: landscape) and (max-height: 768px) {
+
+  /* Mostrar hamburguesa */
+  #cs-navigation .cs-toggle { display: flex !important; }
+
+  /* Menú vertical inicial cerrado */
+  #cs-navigation .cs-ul-wrapper {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    transform: scaleY(0);
+    overflow: hidden;
+    background-color: #e3ceb9;
+    transition: transform 0.4s;
+    transform-origin: top;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+  }
+  #cs-navigation.cs-active .cs-ul-wrapper { transform: scaleY(1); }
+
+  /* Menú vertical */
+  #cs-navigation .cs-ul {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 4rem 0 0 0;
+    max-height: 65vh;
+    overflow: auto;
+    align-items: center;
+  }
+
+  #cs-navigation .cs-li {
+    width: 80%;
+    opacity: 0;
+    transform: translateY(-2rem);
+    text-align: center;
+    background-color: #dcc1a6;
+    border-radius: 10px;
+    transition: transform 0.6s, opacity 0.9s;
+  }
+  #cs-navigation.cs-active .cs-li { opacity: 1; transform: translateY(0); }
+
+  #cs-navigation .cs-li-link {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 1rem 0;
+    color: #5f4128;
+  }
+}
+
+/* ===========================
+   DESKTOP
+=========================== */
+@media only screen and (min-width: 769px) {
+  #cs-navigation .cs-toggle { display: none; }
+  #cs-navigation .cs-ul-wrapper { position: static; transform: none; }
+  #cs-navigation .cs-ul { flex-direction: row; gap: clamp(1.25rem, 2.6vw, 2.25rem); }
+  #cs-navigation .cs-li { width: auto; background: none; opacity: 1; transform: none; }
+  #cs-navigation .cs-li-link { font-size: 1rem; }
+}
+/* ===========================
+   MÓVIL - MENÚ DESPLEGABLE HACIA ABAJO
+=========================== */
+@media only screen and (max-width: 768px),
+       only screen and (orientation: landscape) and (max-height: 768px) {
+
+  #cs-navigation .cs-ul-wrapper {
+    position: absolute;
+    top: 100%; /* justo debajo de la barra */
+    left: 0;
+    width: 100%;
+    height: 0;           /* cerrado inicialmente */
+    overflow: hidden;    /* oculta contenido */
+    background-color: #e3ceb9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: height 0.4s ease;
+    z-index: 9999;
+    border-radius: 0 0 1rem 1rem; /* bordes inferiores redondeados */
+  }
+
+  /* Cuando se abre el menú */
+  #cs-navigation.cs-active .cs-ul-wrapper {
+    height: auto;        /* se despliega */
+    padding-bottom: 1rem;
+  }
+
+  #cs-navigation .cs-ul {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0 0 0;
+    margin: 0;
+  }
+
+  #cs-navigation .cs-li {
+    width: 90%;
+    text-align: center;
+    background-color: #dcc1a6;
+    border-radius: 10px;
+    padding: 0.8rem 0;
+    opacity: 1; /* ahora aparece suavemente con height */
+    transform: translateY(0);
+  }
+
+  #cs-navigation .cs-li-link {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: #5f4128;
+  }
+}
+
+
+/* ===========================
+   NAVBAR PEGADA ARRIBA AL SCROLL
+=========================== */
+#cs-navigation {
+  top: 0 !important; /* siempre arriba */
+  margin: 0;
+  transform: translateX(-50%); /* centrada horizontal */
+  transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
+}
+
