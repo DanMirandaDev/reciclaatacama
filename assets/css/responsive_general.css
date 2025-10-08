@@ -14,14 +14,7 @@
     width: max-content;
   }
 }
-
-@media (max-width: 576px) {
-  #eldocumental{
-    display: flex;
-    width: 90%;
-    
-  }
-}
+
 
 @media (max-width: 576px) {
   #elbasural {
