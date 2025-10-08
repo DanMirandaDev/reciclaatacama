@@ -1,11 +1,5 @@
 /*Responsive general */
 
-@media (min-width: 430px)and (max-width:1040px){
-  #hero-1785 .cs-title,
-  #hero-1785 .cs-text{
-    font-size: 40px;
-  }
-}
 
 @media (max-width: 360px){
   #hero-1785 .cs-title,
@@ -80,6 +74,7 @@
 }
   }
 }
+
 
 
 
