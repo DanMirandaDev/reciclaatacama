@@ -1591,7 +1591,6 @@ ul, ol {
         position: relative;
         z-index: 1;
         /* flips it horizontally */
-        width: 96%;
         transform: scaleX(-1);
     }
     #why-choose-682 .cs-picture {
@@ -13854,8 +13853,8 @@ textarea.form-control {
 }
 
 .timeline-step {
-    background-color: #f1e5d3; /* café claro */
-    border-left: 5px solid #4e2e07;
+    background-color: #e1c9ad; /* café claro */
+    border-left: 3px solid #4e2e07;
     border-radius: 12px;
     padding: 1rem 1.5rem;
     flex: 1 1 220px;
@@ -13896,8 +13895,8 @@ textarea.form-control {
 }
 
 .resultado-card {
-    background-color: #f1e5d3;
-    border-left: 5px solid #8f3b0d;
+    background-color: #e1c9ad ;
+    border-left: 3px solid #8f3b0d;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 6px 15px rgba(0,0,0,0.05);
