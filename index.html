@@ -52,32 +52,6 @@
 
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#8B5E3C",
-                        "background-light": "#F5F5F5",
-                        "background-dark": "#212121",
-                        "card-light": "#FFFFFF",
-                        "card-dark": "#333333",
-                        "text-light": "#374151",
-                        "text-dark": "#E5E7EB",
-                        "primary-hover": "#A07147",
-                    },
-                    fontFamily: {
-                        display: ["Montserrat", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.5rem",
-                    },
-                },
-            },
-        };
-    </script>
-
 </head>
 
 
@@ -86,7 +60,7 @@
         <div class="cs-container">
             <!--Nav Logo-->
             <a href="#home" class="logo" aria-label="back to home">
-                <img src="./assets/imgs/Logo - Recicla Atacama.png" alt="Recicla Atacama" class="logo-img">
+                <img loading="eager" src="./assets/imgs/Logo - Recicla Atacama.webp" alt="Recicla Atacama" class="logo-img" loading="eager">
             </a>
             <!--Navigation List-->
             <nav class="cs-nav" role="navigation">
@@ -154,26 +128,43 @@
 
 
     <section id="hero-1785">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-top">Proyecto</span>
-                <h1 class="cs-title">RECICLA ATACAMA</h1>
-                <br>
-                <div class="cs-button-group">
-                    <a href="#elproyecto" class="cs-button-solid text-white text-center">SABER MÁS</a>
-                </div>
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-top">Proyecto</span>
+            <h1 class="cs-title">RECICLA ATACAMA</h1>
+            <br>
+            <div class="cs-button-group">
+                <a href="#elproyecto" class="cs-button-solid text-white text-center">SABER MÁS</a>
             </div>
         </div>
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="./assets/imgs/header.png" decoding="async">
-            <source media="(min-width: 601px)" srcset="./assets/imgs/header.png" vdecoding="async">
-            <img decoding="async" src="./assets/imgs/header.png" alt="field" width="1920" height="1200"
-                aria-hidden="true" decoding="async">
-        </picture>
-    </section>
-    <!-- End Of Page hero -->
+    <!-- Background Image optimizada -->
+    <picture class="cs-background">
+        <!-- Imagen para móviles -->
+        <source 
+            media="(max-width: 600px)" 
+            srcset="./assets/imgs/header.webp 600w, ./assets/imgs/header.webp 1200w" 
+            sizes="100vw">
+
+        <!-- Imagen para pantallas mayores -->
+        <source 
+            media="(min-width: 601px)" 
+            srcset="./assets/imgs/header-1200.webp 1200w, ./assets/imgs/header.webp 1920w" 
+            sizes="100vw">
+
+        <!-- Fallback / imagen por defecto -->
+        <img 
+            src="./assets/imgs/header.webp" 
+            alt="Recicla Atacama" 
+            width="1920" 
+            height="1200" 
+            loading="eager" 
+            decoding="async" 
+            aria-hidden="true">
+    </picture>
+</section>
+
 
 
     <!-- El Basural Section -->
@@ -240,7 +231,7 @@
                     Este Centro de Reciclaje se concibe como un centro urbano abierto a la comunidad local y a profesionales, que integra gestión de residuos, educación, investigación y desarrollo económico en un espacio autosustentable. Se plantea como un ecosistema donde el reciclaje no es solo una forma de desechar, sino el motor de una economía circular. Su propósito es transformar los residuos en recursos valiosos, impulsar la innovación y generar empleo, todo con un enfoque firme en sostenibilidad y eficiencia.
                 </p>
                 <div class="container-img mt-5">
-                    <img id="img-proyect" src="./assets/imgs/blog-2.webp" alt="planta de reciclaje">
+                    <img id="img-proyect" src="./assets/imgs/blog-2.webp" alt="planta de reciclaje" loading="eager">
                 </div>
                 <h3 class="color-secondary-title mt-5"><span class="color-primary-title"> MODALIDADES DE </span>RECICLAJE
                 </h3>
@@ -319,7 +310,7 @@
             <!-- Modal Lightbox -->
             <div id="lightboxModal" class="lightbox">
                 <span class="close-lightbox">&times;</span>
-                <img class="lightbox-content" id="lightboxImage">
+                <img loading="eager" class="lightbox-content" id="lightboxImage">
             </div>
 
 
@@ -392,7 +383,7 @@
 
     <!-- Imagen -->
     <div class="relative overflow-hidden rounded-3xl shadow-xl mb-24 max-w-5xl mx-auto">
-      <img src="./assets/imgs/several-women-are-sitting-table-working-project (3).jpg"
+      <img loading="eager" src="./assets/imgs/several-women-are-sitting-table-working-project (3).jpg"
            alt="Colaboración comunitaria sostenible"
            class="w-full h-[240px] md:h-[320px] object-cover rounded-3xl brightness-95" />
       <div class="absolute inset-0 bg-gradient-to-t from-[#3E2A18]/60 via-transparent to-transparent"></div>
@@ -463,7 +454,7 @@
 
                 <div class="team-grid">
                     <div class="team-member-card" onclick="openModal('bruno-modal')">
-                        <img src="./assets/imgs/img-perfil/Bruno Alfaro.jpeg" alt="Bruno Alfaro Garcés"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Bruno Alfaro.webp" alt="Bruno Alfaro Garcés"
                             class="member-photo">
                         <h3 class="member-name">Bruno Alfaro Garcés</h3>
                         <p class="member-title">Ingeniero Civil Metalúrgico | Líder del proyecto</p>
@@ -471,7 +462,7 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('christian-modal')">
-                        <img src="./assets/imgs/img-perfil/Christian Matamala.jfif" alt="Christian Matamala"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Christian Matamala.jfif" alt="Christian Matamala"
                             class="member-photo">
                         <h3 class="member-name">Christian Matamala</h3>
                         <p class="member-title">Consultor y Coach Socioambiental</p>
@@ -479,7 +470,7 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('sandra-modal')">
-                        <img src="./assets/imgs/img-perfil/Sandra Acosta Beltran.png" alt="Sandra Acosta"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Sandra Acosta Beltran.png" alt="Sandra Acosta"
                             class="member-photo">
                         <h3 class="member-name">Sandra Acosta</h3>
                         <p class="member-title">Planificación Estratégica y Regeneración Sistémica</p>
@@ -487,7 +478,7 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('mario-modal')">
-                        <img src="./assets/imgs/img-perfil/Mario Pino.jpg" alt="Mario Pino Bambara"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Mario Pino.webp" alt="Mario Pino Bambara"
                             class="member-photo">
                         <h3 class="member-name">Mario Pino Bambara</h3>
                         <p class="member-title">Arquitecto y Especialista en Diseño Sostenible</p>
@@ -495,14 +486,14 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('marco-modal')">
-                        <img src="./assets/imgs/img-perfil/Marco Bedoya.jfif" alt="Marco Bedoya" class="member-photo">
+                        <img loading="eager" src="./assets/imgs/img-perfil/Marco Bedoya.jfif" alt="Marco Bedoya" class="member-photo">
                         <h3 class="member-name">Marco Bedoya</h3>
                         <p class="member-title">Consultor Senior en Medio Ambiente y Estrategia ESG</p>
                         <span class="view-cv-btn">Ver CV</span>
                     </div>
 
                     <div class="team-member-card" onclick="openModal('roberto-modal')">
-                        <img src="./assets/imgs/img-perfil/Roberto Fuentes.jpg" alt="Roberto Fuentes Angellotti"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Roberto Fuentes.webp" alt="Roberto Fuentes Angellotti"
                             class="member-photo">
                         <h3 class="member-name">Roberto Fuentes Angellotti</h3>
                         <p class="member-title">Director Creativo en Publicidad y Comunicación</p>
@@ -510,7 +501,7 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('aura-modal')">
-                        <img src="./assets/imgs/img-perfil/Aura Sinclair.jfif" alt="Aura Sinclair Agurto"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Aura Sinclair.jfif" alt="Aura Sinclair Agurto"
                             class="member-photo">
                         <h3 class="member-name">Aura Sinclair Agurto</h3>
                         <p class="member-title">Gestión, Coordinación y Producción Ejecutiva</p>
@@ -518,7 +509,7 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('carlos-modal')">
-                        <img src="./assets/imgs/img-perfil/Carlos Aros.jfif" alt="Carlos Aros Pacheco"
+                        <img loading="eager" src="./assets/imgs/img-perfil/Carlos Aros.jfif" alt="Carlos Aros Pacheco"
                             class="member-photo">
                         <h3 class="member-name">Carlos Aros Pacheco</h3>
                         <p class="member-title">Abogado especializado en derecho corporativo y tributario</p>
@@ -526,7 +517,7 @@
                     </div>
 
                     <div class="team-member-card" onclick="openModal('viviana-modal')">
-                        <img src="./assets/imgs/img-perfil/perfil-anonimo.png" alt="Vivana San Martín Hernández"
+                        <img loading="eager" src="./assets/imgs/img-perfil/perfil-anonimo.png" alt="Vivana San Martín Hernández"
                             class="member-photo">
                         <h3 class="member-name">Vivana San Martín Hernández</h3>
                         <p class="member-title">Presidenta de la Fundación ADMAPU</p>
@@ -542,7 +533,7 @@
 
     <!-- Logo centrado con efecto hover -->
     <div class="mb-6 opacity-0 translate-y-4 animate-fade-up delay-150">
-        <img src="./assets/imgs/Logo - Fundación ADMAPU.png" 
+        <img loading="eager" src="./assets/imgs/Logo - Fundación ADMAPU.png" 
              alt="Logo Fundación ADMAPU" 
              class="w-40 mx-auto rounded-lg shadow-lg border border-[#A65A24] transition-transform duration-300 hover:scale-105">
     </div>
@@ -583,7 +574,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Christian Matamala.jfif" alt="Christian Matamala"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Christian Matamala.jfif" alt="Christian Matamala"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Consultor y coach socioambiental</strong></p>
 
@@ -652,7 +643,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Sandra Acosta Beltran.png" alt="Sandra Acosta"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Sandra Acosta Beltran.png" alt="Sandra Acosta"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Planificación Estratégica y Regeneración
                                         Sistémica</strong></p>
@@ -722,7 +713,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Mario Pino.jpg" alt="Mario Pino Bambara"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Mario Pino.jpg" alt="Mario Pino Bambara"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Arquitecto chileno-francés | DPLG (Diploma de
                                         Estado)</strong></p>
@@ -795,7 +786,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Marco Bedoya.jfif" alt="Marco Bedoya"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Marco Bedoya.jfif" alt="Marco Bedoya"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Consultor senior en medio ambiente y
                                         sustentabilidad</strong></p>
@@ -865,7 +856,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Roberto Fuentes.jpg" alt="Roberto Fuentes Angellotti"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Roberto Fuentes.jpg" alt="Roberto Fuentes Angellotti"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Director creativo en publicidad y
                                         comunicación</strong></p>
@@ -933,7 +924,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Aura Sinclair.jfif" alt="Aura Sinclair Agurto"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Aura Sinclair.jfif" alt="Aura Sinclair Agurto"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Gestión y coordinación de proyectos | Productora
                                         ejecutiva audiovisual</strong></p>
@@ -1003,7 +994,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Carlos Aros.jfif" alt="Carlos Aros Pacheco"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Carlos Aros.jfif" alt="Carlos Aros Pacheco"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Abogado especializado en derecho corporativo y
                                         tributario</strong></p>
@@ -1066,7 +1057,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/Bruno Alfaro.jpeg" alt="Bruno Alfaro Garcés"
+                                <img loading="eager" src="./assets/imgs/img-perfil/Bruno Alfaro.jpeg" alt="Bruno Alfaro Garcés"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Ingeniero Civil Metalúrgico | Líder del
                                         proyecto</strong></p>
@@ -1138,7 +1129,7 @@
                         <div class="modal-info-grid">
 
                             <div class="modal-col-left">
-                                <img src="./assets/imgs/img-perfil/perfil-anonimo.png" alt="Vivana San Martín Hernández"
+                                <img loading="eager" src="./assets/imgs/img-perfil/perfil-anonimo.png" alt="Vivana San Martín Hernández"
                                     class="modal-profile-photo">
                                 <p class="modal-subtitle"><strong>Presidenta de la Fundación ADMAPU</strong></p>
 
@@ -1282,7 +1273,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
       <div class="bg-[#6B3E1E]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="relative">
-          <img src="./assets/imgs/img-products/bolso.webp" alt="Textiles planos y tejidos" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/bolso.webp" alt="Textiles planos y tejidos" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#3F1F08]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1299,7 +1290,7 @@
 
       <div class="bg-[#7F4F28]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="relative">
-          <img src="./assets/imgs/img-products/gorros.webp" alt="Accesorios y vestuario" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/gorros.webp" alt="Accesorios y vestuario" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#4D2C09]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1315,7 +1306,7 @@
 
       <div class="bg-[#5E3518]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="relative">
-          <img src="./assets/imgs/img-products/cojin.webp" alt="Textiles suaves y rellenos" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/cojin.webp" alt="Textiles suaves y rellenos" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#3F1F08]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1330,7 +1321,7 @@
 
       <div class="bg-[#4D2C09]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="relative">
-          <img src="./assets/imgs/img-products/plantilla.webp" alt="Material para productos duros" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/plantilla.webp" alt="Material para productos duros" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#3F1F08]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1345,7 +1336,7 @@
 
       <div class="bg-[#6B3E1E]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="relative">
-          <img src="./assets/imgs/img-products/cuadro.webp" alt="Arte y decoración" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/cuadro.webp" alt="Arte y decoración" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#4D2C09]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1360,7 +1351,7 @@
 
       <div class="bg-[#7F4F28]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
         <div class="relative">
-          <img src="./assets/imgs/img-products/cojin yoga.webp" alt="Productos de bienestar" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/cojin yoga.webp" alt="Productos de bienestar" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#3F1F08]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1375,7 +1366,7 @@
 
       <div class="bg-[#5E3518]/90 text-[#F7F3EF] rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-2">
         <div class="relative">
-          <img src="./assets/imgs/img-products/reciclaje.webp" alt="Bioinnovación y sostenibilidad" class="w-full h-56 object-cover" />
+          <img loading="eager" src="./assets/imgs/img-products/reciclaje.webp" alt="Bioinnovación y sostenibilidad" class="w-full h-56 object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#4D2C09]/70 to-transparent"></div>
         </div>
         <div class="p-6">
@@ -1397,7 +1388,7 @@
             <footer class="site-footer">
                 <div class="footer-container">
                     <div class="footer-logo">
-                        <img src="./assets/imgs/Logo - Recicla Atacama.png" alt="Recicla Atacama Logo">
+                        <img  loading="eager" src="./assets/imgs/Logo - Recicla Atacama.webp" alt="Recicla Atacama Logo">
                     </div>
                     <div class="footer-contact">
                         <h3 id="contacto">Contáctanos</h3>
