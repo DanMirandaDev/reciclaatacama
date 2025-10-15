@@ -1754,12 +1754,6 @@ blockquote.quote {
 
 
 /* BASE: Aplicar interlineado un poco más amplio a todo el texto del cuerpo */
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--color-text-dark);
-    line-height: 1.8; /* AUMENTO CLAVE: Interlineado estándar para todo el sitio (antes 1.4/1.5/1.7) */
-}
-
 #eldocumental{
   background-color: rgba(236, 216, 202, 0.945);
   
@@ -14627,6 +14621,23 @@ p{
   }
 }
 
-
-
-
+body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdf6e3;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #6b4226; /* degradado café se puede ajustar */
+      color: #fff;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    main {
+      padding: 2rem;
+    }
