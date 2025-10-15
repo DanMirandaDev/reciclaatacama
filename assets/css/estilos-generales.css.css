@@ -13480,7 +13480,7 @@ textarea.form-control {
 .logo {
     display: flex;
     align-items: center; /* centra verticalmente */
-    margin-left: 13
+    margin-left: 15
     rem;
     height: 60px; /* altura del navbar */
 }
@@ -14648,7 +14648,7 @@ p{
   /* Logo a la izquierda */
   #cs-navigation .logo {
     position: absolute;
-    left: 0rem;
+    left: -2rem;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
