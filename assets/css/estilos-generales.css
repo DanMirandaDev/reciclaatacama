@@ -10176,7 +10176,7 @@ textarea.form-control {
 #hero-1785 .cs-logo {
   display: block;
   margin: 2rem auto 0 auto;
-  width: clamp(12rem, 40vw, 28rem);
+  width: clamp(40rem, 40vw, 28rem);
   height: auto;
 }
 
