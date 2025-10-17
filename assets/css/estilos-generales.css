@@ -10755,11 +10755,16 @@ textarea.form-control {
         padding: 15px;
     }
 
-    .color-primary-title,
-    .color-secondary-title{
-      font-size: 24px;
-    }
+  .color-secondary-title{
+    font-size: 26px;
+  }
 
+  
+  #about{
+    font-size: 13px;
+  }
+
+   
   
     .cs-top{
       font-size: 13px;
