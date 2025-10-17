@@ -100,15 +100,6 @@
 }
 
 
-@media (max-width: 576px) {
-  #elproyecto {
-    width: 100%;
-    object-fit: cover;
-    text-align: center;
-    justify-self: center;
-  }
-  
-}
 
 
 
@@ -138,19 +129,6 @@
 }
 
 
-@media (max-width: 300px) {
-  #elproyecto .cs-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #elproyecto img {
-    max-width: 220px;
-  }
-
-
-}
 
 
 
@@ -199,13 +177,6 @@
   display: flex;
   justify-content: center;
 }
-
-
-#img-proyect{
-  width: 100%;
-  height: 100%;
-}
-
 
 
 
