@@ -11376,7 +11376,7 @@ body {
 
 @media (max-width: 480px) {
   .text-proyecto {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
     text-align: center;
   }
