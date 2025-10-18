@@ -10709,12 +10709,6 @@ body {
     background-color: #dabc98;
 }
 
-.quienes-somos-section h2 {
-    font-size: 2em;
-    font-weight: 900;
-    color: var(--color-secondary-title);
-    margin-bottom: 25px;
-}
 
 .section-intro {
     max-width: 900px;
