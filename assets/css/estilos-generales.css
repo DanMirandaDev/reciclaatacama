@@ -111,6 +111,41 @@
 }
 
 
+/* ===================== Sección El Proyecto ===================== */
+.text-proyecto {
+  max-width: 900px;             /* Ancho controlado para buena lectura */
+  margin: 0 auto;               /* Centra horizontalmente */
+  text-align: justify;          /* Justifica texto (más profesional) */
+  font-size: 1.1rem;
+  line-height: 1.75;
+  font-family: 'Inter', sans-serif;
+  padding: 0 20px;              /* Espaciado lateral para pantallas pequeñas */
+}
+
+.text-proyecto strong {
+  color: #000000;               /* Color destacado coherente con tu paleta */
+  font-weight: 700;
+}
+
+/* Mejora legibilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+  .text-proyecto {
+    text-align: left;           /* en móviles se lee mejor alineado a la izquierda */
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-proyecto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 12px;
+  }
+}
+
+
 
 
 @media (min-width: 360px) and (max-width:852px) {
